@@ -16,7 +16,8 @@
 }
 
 .content-profile-mobile {
-  @include mix.flex-row (space-around, center, 0.5rem);
+  @include mix.flex-row(space-between, center, 1.5rem);
+  padding: 0 1rem;
 }
 
 .mobile-ig-header {
@@ -24,7 +25,7 @@
   width: 100%;
 
   .username-title-profile {
-    font-size: 0.8rem;
+    font-size: 1.3rem;
     font-weight: 600;
   }
 
@@ -34,7 +35,7 @@
 
   .stat {
     @include mix.flex-column(flex-start, start, 0.25rem);
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   .count {
@@ -42,7 +43,164 @@
   }
 }
 
+.action-button-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .profile-pic {
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.profile-ig-desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .container-ig {
+    margin-left: 80px;
+  }
+
+  .container-profile-ig {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem 3rem;
+  }
+
+  .action-button-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    & button {
+      width: 13rem;
+    }
+  }
+
+  .highlights-ig-container {
+    width: 100%;
+
+    .wrap-highlights-ig {
+      @include mix.flex-row(space-around, center, 1rem);
+      padding: 1rem;
+
+      .highlight {
+        width: 100%;
+        white-space: nowrap;
+
+        & img {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+      }
+    }
+  }
+
+  .profile-ig-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container-ig {
+    margin-left: 250px;
+  }
+
+  .profile-ig-mobile {
+    display: none;
+  }
+
+  .bio-ig-mobile {
+    display: none;
+  }
+
+  .profile-ig-desktop {
+    @include mix.flex-column(center, center, 1rem);
+    padding: 1rem 3rem;
+
+    .content-profile-desktop {
+      @include mix.flex-row(space-between, center, 1.5rem);
+      padding: 0 1rem;
+    }
+
+    .profile-pic-desktop {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+  }
+
+  .username-ig-desktop {
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    & .username-subtitle-profile {
+      font-size: 1rem;
+      font-weight: 400;
+      color: var.$color-texto-secundario;
+    }
+  }
+
+  .stats-row {
+    @include mix.flex-row(flex-start, center, 1rem);
+    padding: 1rem;
+    width: 100%;
+
+    .stat {
+      @include mix.flex-column(flex-start, start, 0.25rem);
+      font-size: 1rem;
+
+      & .label {
+        font-weight: 600;
+        color: var.$color-texto-secundario;
+      }
+    }
+  }
+
+  .bio-ig-desktop {
+    @include mix.flex-column(flex-start, start, 0.25rem);
+    padding: 0.5rem;
+
+    & .category {
+      font-weight: 600;
+      color: var.$color-texto-secundario;
+    }
+  }
+
+  .action-button-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    & button {
+      width: 13rem;
+    }
+  }
+
+  .highlights-ig-container {
+    @include mix.flex-column(center, center, 1rem);
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .wrap-highlights-ig {
+    @include mix.flex-row(space-around, center, 1rem);
+    padding: 1rem;
+    width: 100%;
+  }
 }

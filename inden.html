@@ -10,6 +10,21 @@
     <link rel="stylesheet" href="./css/main.css" />
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <!-- fuentes - google font - Pacifico -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fuente - google font - poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- titulo -->
     <title>Lexpin - Profile</title>
     <!-- Scripts fontawesome -->
@@ -43,6 +58,7 @@
     </header>
     <main class="container-ig">
       <section class="container-profile-ig">
+        <!-- Profile breakpoint mobile - tablet -->
         <section class="profile-ig-mobile">
           <div class="content-profile-mobile">
             <div class="photo-ig-profile">
@@ -87,14 +103,60 @@
             ><i class="fa-brands fa-threads"></i>lexpinonline</a
           >
         </section>
-        <section class="action-button-profile">
-          <!-- Botones de Acción: Flexbox row -->
-          <div class="action-buttons">
-            <button class="follow-btn">Seguir</button>
-            <button class="message-btn">Mensaje</button>
-            <button class="whatsapp-btn">WhatsApp</button>
+      </section>
+      <!-- profile breakpoint desktop -->
+      <section class="profile-ig-desktop">
+        <div class="content-profile-desktop">
+          <div class="photo-ig-profile">
+            <img
+              src="./assets/multimedia/img/Lexpin-logo.jpg"
+              alt="Foto de Perfil"
+              class="profile-pic-desktop"
+            />
           </div>
-        </section>
+          <div class="desktop-ig-header">
+            <div class="username-ig-desktop">
+              <h1 class="username-title-profile">lexpinonline</h1>
+              <h3 class="username-subtitle-profile">LEXPIN | Cursos Online</h3>
+            </div>
+            <div class="stats-row">
+              <!-- Flexbox para counts -->
+              <div class="stat">
+                <span class="count">1,234</span>
+                <span class="label">Publicaciones</span>
+              </div>
+              <div class="stat">
+                <span class="count">56k</span>
+                <span class="label">Seguidores</span>
+              </div>
+              <div class="stat">
+                <span class="count">1,200</span>
+                <span class="label">Seguidos</span>
+              </div>
+            </div>
+            <div class="bio-ig-desktop">
+              <p class="category">Educación</p>
+              <p class="location">vecoclar</p>
+              <p class="bio">
+                Nos dedicamos a formarte en diseño y programación web. <br />
+                💻 Síguenos
+              </p>
+              <a
+                href="https://www.threads.com/@lexpinonline?xmt=AQF0laISntznphPjsq4tN7wSO5mtUoFkOGOm7oSxRWN5juI"
+                class="threads-link"
+                ><i class="fa-brands fa-threads"></i>lexpinonline</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="action-button-profile">
+        <!-- Botones de Acción: Flexbox row -->
+        <div class="action-buttons">
+          <button class="follow-btn">Seguir</button>
+          <button class="message-btn">Mensaje</button>
+          <button class="whatsapp-btn">WhatsApp</button>
+        </div>
       </section>
       <section class="highlights-ig-container">
         <div class="wrap-highlights-ig">
@@ -166,15 +228,51 @@
       <!-- Posts Grid: CSS Grid 3x3 -->
       <section class="posts-section">
         <div class="posts-grid">
-          <img src="/assets/multimedia/img/post-1.webp" alt="Post 1" class="post-img" />
-          <img src="/assets/multimedia/img/post-2.webp" alt="Post 2" class="post-img" />
-          <img src="/assets/multimedia/img/post-3.webp" alt="Post 3" class="post-img" />
-          <img src="/assets/multimedia/img/post-4.webp" alt="Post 4" class="post-img" />
-          <img src="/assets/multimedia/img/post-5.webp" alt="Post 5" class="post-img" />
-          <img src="/assets/multimedia/img/post-6.webp" alt="Post 6" class="post-img" />
-          <img src="/assets/multimedia/img/post-7.webp" alt="Post 7" class="post-img" />
-          <img src="/assets/multimedia/img/post-8.webp" alt="Post 8" class="post-img" />
-          <img src="/assets/multimedia/img/post-9.webp" alt="Post 9" class="post-img" />
+          <img
+            src="/assets/multimedia/img/post-1.webp"
+            alt="Post 1"
+            class="post-img"
+          />
+          <img
+            src="/assets/multimedia/img/post-2.webp"
+            alt="Post 2"
+            class="post-img"
+          />
+          <img
+            src="/assets/multimedia/img/post-3.webp"
+            alt="Post 3"
+            class="post-img"
+          />
+          <img
+            src="/assets/multimedia/img/post-4.webp"
+            alt="Post 4"
+            class="post-img"
+          />
+          <img
+            src="/assets/multimedia/img/post-5.webp"
+            alt="Post 5"
+            class="post-img"
+          />
+          <img
+            src="/assets/multimedia/img/post-6.webp"
+            alt="Post 6"
+            class="post-img"
+          />
+          <img
+            src="/assets/multimedia/img/post-7.webp"
+            alt="Post 7"
+            class="post-img"
+          />
+          <img
+            src="/assets/multimedia/img/post-8.webp"
+            alt="Post 8"
+            class="post-img"
+          />
+          <img
+            src="/assets/multimedia/img/post-9.webp"
+            alt="Post 9"
+            class="post-img"
+          />
         </div>
       </section>
       <!-- Footer ig mobile - sidebar -->
@@ -185,6 +283,52 @@
           <button><i class="fa-regular fa-square-plus"></i></button>
           <button><i class="fa-regular fa-heart"></i></button>
           <button><i class="fa-regular fa-user"></i></button>
+        </div>
+      </section>
+      <!-- sidebar lado izquierdo para breakpoint tablet -->
+      <section class="sidebar-ig-tablet">
+        <div class="sidebar-ig-tablet-content">
+          <div class="content-up">
+            <button><i class="fa-brands fa-instagram"></i></button>
+          </div>
+          <div class="content-center">
+            <button><i class="fa-solid fa-house"></i></button>
+            <button><i class="fa-regular fa-compass"></i></button>
+            <button><i class="fa-regular fa-square-plus"></i></button>
+            <button><i class="fa-regular fa-heart"></i></button>
+            <button><i class="fa-regular fa-user"></i></button>
+          </div>
+          <div class="content-down">
+            <button><i class="fa-solid fa-bars"></i></button>
+            <button><i class="fa-solid fa-table-cells"></i></button>
+          </div>
+        </div>
+      </section>
+      <section class="sidebar-ig-desktop">
+        <div class="sidebar-ig-desktop-content">
+          <div class="content-up">
+            <button><i class="fa-brands fa-instagram"></i></button>
+          </div>
+          <div class="content-center">
+            <button>
+              <i class="fa-solid fa-house"></i><span>Inicio</span>
+            </button>
+            <button>
+              <i class="fa-regular fa-compass"></i><span>Explorar</span>
+            </button>
+            <button>
+              <i class="fa-regular fa-square-plus"></i><span>Crear</span>
+            </button>
+            <button>
+              <i class="fa-regular fa-heart"></i><span>Notificaciones</span>
+            </button>
+            <button>
+              <i class="fa-regular fa-user"></i><span>Perfil</span>
+            </button>
+          </div>
+          <div class="content-down">
+            <button><i class="fa-solid fa-bars"></i><span>Más</span></button>
+          </div>
         </div>
       </section>
     </main>
