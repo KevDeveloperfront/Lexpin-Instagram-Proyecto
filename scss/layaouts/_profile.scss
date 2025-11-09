@@ -25,12 +25,12 @@
   width: 100%;
 
   .username-title-profile {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
   }
 
   .stats-row {
-    @include mix.flex-row(center, center, 1rem);
+    @include mix.flex-row(center, center, 0.30rem);
   }
 
   .stat {
