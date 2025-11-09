@@ -1,0 +1,21 @@
+// Estilos para header de mobile
+
+//variables - mixins
+@use "./../utils/variables" as var;
+@use "./../utils/mixins" as mix;
+
+.mobile-ig {
+  @include mix.flex-row(space-between, center, 1rem);
+  padding: 1rem;
+  border-bottom: 0.5px solid var.$color-borde-divisor;
+  position: sticky;
+  top: 0;
+  background-color: var.$color-fondo-secundario;
+  z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-ig {
+    display: none;
+  }
+}

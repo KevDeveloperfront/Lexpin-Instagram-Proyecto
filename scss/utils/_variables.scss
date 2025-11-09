@@ -1,0 +1,28 @@
+// Variables colores para perfil de instagram
+
+// Archivo: utils/_variables.scss
+
+// --- Colores Primarios y de Fondo ---
+$color-fondo-principal: #ffffff; // Blanco puro (Fondo de la mayoría de las pantallas)
+$color-fondo-secundario: #fafafa; // Blanco muy sutil (Para secciones, tarjetas o contenedores)
+$color-borde-divisor: #dbdbdb; // Gris claro para bordes, líneas divisorias y separadores
+
+// --- Colores de Texto y Iconos ---
+$color-texto-principal: #262626; // Negro muy oscuro (Texto principal, iconos)
+$color-texto-secundario: #8e8e8e; // Gris medio (Metadatos, descripciones secundarias, placeholders)
+
+// --- Colores de Marca y Acción ---
+$color-marca-principal: #0095f6; // Azul de Instagram (Botones de acción, enlaces, texto de seguidores)
+$color-enlace-secundario: #00376b; // Azul oscuro (Para enlaces importantes o de alto contraste)
+
+// --- Colores de Estado y Notificación ---
+$color-exito: #3897f0; // Un azul para el éxito o información
+$color-advertencia: #f0ad4e; // Amarillo/Naranja para advertencia
+$color-error: #ed4956; // Rojo de Instagram (Mensajes de error, iconos de eliminar)
+
+// --- Colores Adicionales (Ej. para el gradiente del story/perfil) ---
+// Nota: Para el gradiente real, se usaría un mixin o un CSS más complejo,
+// pero estos son los colores clave.
+$color-gradiente-inicio: #feda75;
+$color-gradiente-medio: #fa7e1e;
+$color-gradiente-final: #d62976;

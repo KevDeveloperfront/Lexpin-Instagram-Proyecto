@@ -1,0 +1,33 @@
+// variables
+@use "./../utils/variables" as var;
+@use "./../utils/mixins" as mix;
+
+//estilos del sidebar de mobile
+.footer-ig-mobile {
+  @include mix.flex-column(center, center, 1rem);
+  padding: 1rem;
+  position: sticky;
+  bottom: 0;
+  background-color: var.$color-fondo-secundario;
+
+  .footer-ig-content {
+    @include mix.flex-row(space-between, center, 1rem);
+    padding: 0 1rem;
+    width: 100%;
+
+    & i {
+      font-size: 1.5rem;
+      color: var.$color-texto-secundario;
+
+      &:hover {
+        color: var.$color-marca-principal;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-ig-mobile {
+    display: none;
+  }
+}

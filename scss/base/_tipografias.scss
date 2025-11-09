@@ -1,0 +1,16 @@
+// estilos para tipografias
+
+//variables
+@use "./../utils/variables" as var;
+@use "./../utils/mixins" as mix;
+
+// Estilos de tipografias
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}

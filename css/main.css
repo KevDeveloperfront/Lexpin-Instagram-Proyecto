@@ -1,0 +1,622 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.mobile-ig {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 0.5px solid #dbdbdb;
+  position: sticky;
+  top: 0;
+  background-color: #fafafa;
+  z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-ig {
+    display: none;
+  }
+}
+.container-profile-ig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.profile-ig-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  background-color: #fafafa;
+}
+
+.content-profile-mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.mobile-ig-header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+.mobile-ig-header .username-title-profile {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.mobile-ig-header .stats-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.mobile-ig-header .stat {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  gap: 0.25rem;
+  font-size: 1rem;
+}
+.mobile-ig-header .count {
+  font-weight: 600;
+}
+
+.action-button-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.profile-pic {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.profile-ig-desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .container-ig {
+    margin-left: 80px;
+  }
+  .container-profile-ig {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem 3rem;
+  }
+  .action-button-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .action-button-profile button {
+    width: 13rem;
+  }
+  .highlights-ig-container {
+    width: 100%;
+  }
+  .highlights-ig-container .wrap-highlights-ig {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .highlights-ig-container .wrap-highlights-ig .highlight {
+    width: 100%;
+    white-space: nowrap;
+  }
+  .highlights-ig-container .wrap-highlights-ig .highlight img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  .profile-ig-desktop {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container-ig {
+    margin-left: 250px;
+  }
+  .profile-ig-mobile {
+    display: none;
+  }
+  .bio-ig-mobile {
+    display: none;
+  }
+  .profile-ig-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 3rem;
+  }
+  .profile-ig-desktop .content-profile-desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  .profile-ig-desktop .profile-pic-desktop {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  .username-ig-desktop {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .username-ig-desktop .username-subtitle-profile {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #8e8e8e;
+  }
+  .stats-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+  }
+  .stats-row .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 0.25rem;
+    font-size: 1rem;
+  }
+  .stats-row .stat .label {
+    font-weight: 600;
+    color: #8e8e8e;
+  }
+  .bio-ig-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 0.25rem;
+    padding: 0.5rem;
+  }
+  .bio-ig-desktop .category {
+    font-weight: 600;
+    color: #8e8e8e;
+  }
+  .action-button-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .action-button-profile button {
+    width: 13rem;
+  }
+  .highlights-ig-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+  }
+  .wrap-highlights-ig {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+  }
+}
+.highlights-ig-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  overflow-x: scroll;
+}
+.highlights-ig-container::-webkit-scrollbar {
+  display: none;
+}
+.highlights-ig-container .wrap-highlights-ig {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
+}
+.highlights-ig-container .highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+}
+.highlights-ig-container .highlight img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.highlights-ig-container .highlight span {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.posts-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+  gap: 0.25rem;
+}
+.posts-grid .post-img {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .posts-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.25rem;
+  }
+  .posts-grid .post-img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .posts-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 0.25rem;
+  }
+  .posts-grid .post-img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.footer-ig-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  position: sticky;
+  bottom: 0;
+  background-color: #fafafa;
+}
+.footer-ig-mobile .footer-ig-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 1rem;
+  width: 100%;
+}
+.footer-ig-mobile .footer-ig-content i {
+  font-size: 1.5rem;
+  color: #8e8e8e;
+}
+.footer-ig-mobile .footer-ig-content i:hover {
+  color: #0095f6;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-ig-mobile {
+    display: none;
+  }
+}
+.sidebar-ig-tablet {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .sidebar-ig-tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 80px;
+    background-color: #fafafa;
+    z-index: 10;
+  }
+  .sidebar-ig-tablet-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+  }
+  .sidebar-ig-tablet-content i {
+    font-size: 1.5rem;
+    color: #8e8e8e;
+  }
+  .sidebar-ig-tablet-content i:hover {
+    color: #0095f6;
+  }
+  .content-up {
+    margin-bottom: 4rem;
+  }
+  .content-center {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    position: relative;
+    top: -10px; /* sube el contenido */
+  }
+  .content-down {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+.sidebar-ig-desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .sidebar-ig-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #fafafa;
+    z-index: 10;
+  }
+  .sidebar-ig-desktop-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    height: 100%;
+  }
+  .sidebar-ig-desktop-content button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: none;
+    border: none;
+    color: #8e8e8e;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.75rem 0;
+    width: 100%;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  .sidebar-ig-desktop-content button:hover {
+    color: #0095f6;
+    transform: translateX(4px);
+  }
+  .sidebar-ig-desktop-content button i {
+    font-size: 1.4rem;
+  }
+  .sidebar-ig-desktop-content button span {
+    display: inline-block;
+    opacity: 1;
+    visibility: visible;
+  }
+  .content-up {
+    margin-bottom: 4rem;
+  }
+  .content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    top: -10px;
+  }
+  .content-down {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+.follow-btn {
+  background-color: #0095f6;
+  color: #ffffff;
+  border: 1px solid #0095f6;
+  border-radius: 4px;
+  padding: 0.5rem 2.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.follow-btn:hover {
+  background-color: #ffffff;
+  color: #0095f6;
+}
+
+.message-btn {
+  background-color: #ffffff;
+  color: #0095f6;
+  border: 1px solid #0095f6;
+  border-radius: 4px;
+  padding: 0.5rem 2.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.message-btn:hover {
+  background-color: #0095f6;
+  color: #ffffff;
+}
+
+.whatsapp-btn {
+  background-color: #ffffff;
+  color: #0095f6;
+  border: 1px solid #0095f6;
+  border-radius: 4px;
+  padding: 0.5rem 2.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.whatsapp-btn:hover {
+  background-color: #0095f6;
+  color: #ffffff;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.container-ig-menu {
+  padding: 1rem;
+  background-color: #fafafa;
+}
+
+.submenu-ig-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
+}
+.submenu-ig-content i {
+  font-size: 1.5rem;
+  color: #8e8e8e;
+}
+.submenu-ig-content i:hover {
+  color: #0095f6;
+}
+
+.reels {
+  padding: 0 3rem;
+}/*# sourceMappingURL=main.css.map */

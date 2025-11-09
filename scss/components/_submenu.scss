@@ -1,0 +1,29 @@
+//variables
+@use "./../utils/variables" as var;
+@use "./../utils/mixins" as mix;
+
+// estilos del submenu de instagram
+.container-ig-menu {
+  padding: 1rem;
+  background-color: var.$color-fondo-secundario;
+}
+
+
+// estilos del submenu de instagram - publicaciones, reels, etiquetas
+.submenu-ig-content {
+  @include mix.flex-row(space-around, center, 1rem);
+  padding: 1rem;
+  
+  & i {
+    font-size: 1.5rem;
+    color: var.$color-texto-secundario;
+
+    &:hover {
+      color: var.$color-marca-principal;
+    }
+  }
+}
+
+.reels {
+  padding: 0 3rem;
+}

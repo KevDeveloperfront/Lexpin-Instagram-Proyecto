@@ -1,0 +1,23 @@
+//invacion de archivos
+
+// Variables
+@use "./utils/variables";
+@use "./utils/mixins";
+
+// Base
+@use "./base/reset";
+@use "./base/body";
+@use "./base/tipografias";
+
+// layaouts
+@use "./layaouts/header";
+@use "./layaouts/profile";
+@use "./layaouts/wrap-highlights";
+@use "./layaouts/posts";
+@use "./layaouts/sidebar-mobile";
+@use "./layaouts/sidebar-tablet";
+@use "./layaouts/sidebar-desktop";
+
+// components
+@use "./components/botones";
+@use "./components/submenu";
