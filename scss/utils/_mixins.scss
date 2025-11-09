@@ -1,0 +1,44 @@
+// funciones para display
+
+// Flex
+@mixin flex-row($justify: flex-start, $align: stretch, $gap: 1rem) {
+  display: flex;
+  flex-direction: row;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+@mixin flex-column($justify: flex-start, $align: stretch, $gap: 1rem) {
+  display: flex;
+  flex-direction: column;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+// Grid
+@mixin grid(
+  $columns: 1fr,
+  $rows: auto,
+  $gap: 1rem,
+  $auto-rows: null,
+  // grid-auto-rows
+  $auto-fit: repeat(auto-fit, minmax($columns, 1fr))
+) {
+  display: grid;
+  gap: $gap;
+
+  // Si auto-fit está activado, generamos el repeat
+  @if $auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax($columns, 1fr));
+  } @else {
+    grid-template-columns: $columns;
+  }
+
+  grid-template-rows: $rows;
+
+  @if $auto-rows {
+    grid-auto-rows: $auto-rows;
+  }
+}

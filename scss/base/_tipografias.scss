@@ -1,0 +1,12 @@
+// estilos para tipografias
+
+//variables
+@use "./../utils/variables" as var;
+@use "./../utils/mixins" as mix;
+
+// Estilos de tipografias
+.category {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var.$color-texto-secundario;
+}

@@ -1,0 +1,48 @@
+// Estilos para la seccion del Profile
+
+//variables
+@use "./../utils/variables" as var;
+@use "./../utils/mixins" as mix;
+
+.container-profile-ig {
+  @include mix.flex-column(center, center, 1rem);
+  padding: 1rem;
+}
+
+.profile-ig-mobile {
+  @include mix.flex-column(center, center, 1rem);
+  padding: 0.5rem;
+  background-color: var.$color-fondo-secundario;
+}
+
+.content-profile-mobile {
+  @include mix.flex-row (space-around, center, 0.5rem);
+}
+
+.mobile-ig-header {
+  @include mix.flex-column(flex-start, start, 1rem);
+  width: 100%;
+
+  .username-title-profile {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .stats-row {
+    @include mix.flex-row(center, center, 1rem);
+  }
+
+  .stat {
+    @include mix.flex-column(flex-start, start, 0.25rem);
+    font-size: 0.75rem;
+  }
+
+  .count {
+    font-weight: 600;
+  }
+}
+
+.profile-pic {
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}

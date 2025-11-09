@@ -1,0 +1,40 @@
+// estilos para las historias destacadas - highlights
+
+//variables - mixins
+@use "./../utils/variables" as var;
+@use "./../utils/mixins" as mix;
+
+
+//wrap de las historias destacadas
+.highlights-ig-container {
+  @include mix.flex-column(center, flex-start, 1rem);
+  padding: 1rem;
+  overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .wrap-highlights-ig {
+    @include mix.flex-row(space-around, center, 1rem);
+    padding: 1rem;
+  }
+
+  .highlight {
+    @include mix.flex-column(center, center, 0.5rem);
+    position: relative;
+    width: 100%; 
+    white-space: nowrap;
+
+    img {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%; 
+      object-fit: cover;
+    }
+    span {
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+  }
+}

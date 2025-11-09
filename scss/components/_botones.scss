@@ -1,0 +1,60 @@
+// estilos para los botones
+
+//variables
+@use "./../utils/variables" as var;
+@use "./../utils/mixins" as mix;
+
+// Estilos de los botones de acción follow
+.follow-btn {
+  background-color: var.$color-marca-principal;
+  color: var.$color-fondo-principal;
+  border: 1px solid var.$color-marca-principal;
+  border-radius: 4px;
+  padding: 0.5rem 1.9rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var.$color-fondo-principal;
+    color: var.$color-marca-principal;
+  }
+}
+
+// Estilos de los botones deacción message
+.message-btn {
+  background-color: var.$color-fondo-principal;
+  color: var.$color-marca-principal;
+  border: 1px solid var.$color-marca-principal;
+  border-radius: 4px;
+  padding: 0.5rem 1.9rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var.$color-marca-principal;
+    color: var.$color-fondo-principal;
+  }
+}
+
+//estilos del boton whatsapp
+
+.whatsapp-btn {
+  background-color: var.$color-fondo-principal;
+  color: var.$color-marca-principal;
+  border: 1px solid var.$color-marca-principal;
+  border-radius: 4px;
+  padding: 0.5rem 1.9rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var.$color-marca-principal;
+    color: var.$color-fondo-principal;
+  }
+}
+
+button {
+  border:none;
+  cursor: pointer;
+  background-color: transparent;
+}
